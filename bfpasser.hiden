@@ -1,0 +1,57 @@
+function PlayerMenagerBFuncion()
+    local code = '>>>>>>>>++++++++[-<++++++++++++++>]<.++.---------.+++++.++++++.<<<<++++++++[-<+++++>]<.------.>+++++++[->+++++++++<]>++++++.>>>--..---.+++.<<<<<<<++++++++[->+++++++<]>++.>--.>>+++++++.>>>+++.<<++++++++[->++++++++++++<]>+.<<<<.>>>>>---------------.+++++++++++++++.-------.-----------.+++++++++++++++++.-----------.++++++.-.<<<<<.+++++++.-----.--.++++++++++++++..--------------.>>>>>--------.+++++++++++++++.-------.-----------.<<<++.>>.>++++++++++.--------.<<<<<.++++++++++++++..--------------.++.+++++.-------.>>>>>+++++++++.+.+++++.<<<<<.>>>>>--------------.+++++++++.++++++.-------.----------.<<<<<++++++++++++++.------------.+++++++.'
+    return(code,true)
+end
+
+local function exampleFunction2()
+    print("Executing Example Function 2 from Brainfuck!")
+end
+
+
+
+super ale to nie zadziałą wraz z moimi poleceniami wykonywanymi z oczytanego bf zarpogramuj nowy  kod skryptu który wysłałem na samym końcu tej wiadomośći 
+
+
+to nie tak ma działąć:
+
+local bfCode = [[
++[----->+++<]>.
+##> BF examplefunction2 coded bf with ~+!~     and ~-!~ <##
+]]
+
+
+local settings = parseConfig(configString)
+local bfRunner = createBrainfuckRunner(settings)
+-- Register Lua functions with the Brainfuck runner
+bfRunner.registerLuaFunction(UIDBF,'IDrunner','name','true')
+bfRunner.registerLuaFunction(UIDBF,'IDrunner','name','true')
+
+-- Run the Brainfuck code
+bfRunner.run(bfCode)
+
+
+    local function executeLuaFunction()
+        print("Executing Lua function...")
+        -- Example Lua function, replace with actual logic
+        print("This is a Lua function executed from Brainfuck code!")
+        if debug then print("Lua function executed.") end
+    end
+
+
+
+
+już lepsze rozwiązanie podałeś tutaj:
+
+
+
+
+    local function executeLuaFunction(funcName)
+        if luaFunctions[funcName] then
+            luaFunctions[funcName]()
+            if debug then print("Executed Lua function:", funcName) end
+        else
+            print("Error: Lua function '" .. funcName .. "' not found.")
+        end
+    end
+
+
