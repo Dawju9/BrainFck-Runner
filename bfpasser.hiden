@@ -9,11 +9,6 @@ end
 
 
 
-super ale to nie zadziałą wraz z moimi poleceniami wykonywanymi z oczytanego bf zarpogramuj nowy  kod skryptu który wysłałem na samym końcu tej wiadomośći 
-
-
-to nie tak ma działąć:
-
 local bfCode = [[
 +[----->+++<]>.
 ##> BF examplefunction2 coded bf with ~+!~     and ~-!~ <##
@@ -39,8 +34,6 @@ bfRunner.run(bfCode)
 
 
 
-
-już lepsze rozwiązanie podałeś tutaj:
 
 
 
